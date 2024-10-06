@@ -49,7 +49,7 @@ const About = () => {
       <section className="about-developer mt-8">
         <h3 className="text-2xl font-semibold">About the Developer</h3>
         <p className="mt-2 text-lg">
-          Hi, I'm <strong>Vinamra</strong>, a passionate web developer with a love for creating interactive and user-friendly applications. This project has been a learning journey in full stack development, and I'm excited to continue enhancing FoodFrenzy with new features.
+          Hi, I'm <strong>Vinamra Sharma</strong>, a passionate web developer with a love for creating interactive and user-friendly applications. This project has been a learning journey in full stack development, and I'm excited to continue enhancing FoodFrenzy with new features.
         </p>
       </section>
 
