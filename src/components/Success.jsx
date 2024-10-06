@@ -14,12 +14,18 @@ const Success = () => {
       {loading ? (
         <PropagateLoader color="#36d7b7" />
       ) : (
-        <div>
-          <h2 className="text-3xl font-semibold mb-4 text-center">
-            Order Successful!
-          </h2>
-          <p>Thank you for your order. Your food will be delivered shortly!</p>
-        </div>
+        <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+  <h2 className="text-4xl font-bold text-green-600 mb-4">
+    Order Confirmed! 🎉
+  </h2>
+  <p className="text-lg text-gray-700 mb-6">
+    Your delicious feast is on its way... or at least, it would be if this were real! 🍕
+  </p>
+  <p className="text-sm text-gray-500">
+    For now, you can sit back, relax, and dream of all the tasty dishes you just "ordered." 😄
+  </p>
+</div>
+
       )}
     </div>
   );

@@ -32,6 +32,9 @@ const Cart = () => {
 
   return (
     <>
+     {activeCart && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"></div>
+      )}
       <div
         className={`fixed right-0 top-0 w-full lg:w-[30vw] bg-white h-full p-5 ${
           activeCart ? "translate-x-0" : "translate-x-full"
@@ -60,7 +63,7 @@ const Cart = () => {
           })
         ) : (
           <h2 className="mt-5 text-center text-xl font-bold text-gray-800">
-            Hey, Your cart is empty !! Order Now...
+           Oohh!! You forgot to add something into the cart.
           </h2>
         )}
 
@@ -72,15 +75,18 @@ const Cart = () => {
 
           <hr className="w-[90vw] lg:w-[28vw] my-2" />
           <button
-            onClick={handleCheckout} // Call handleCheckout on button click
-            className="bg-green-500 font-bold px-3 py-2 w-[90vw] lg:w-[28vw] rounded-md text-white mb-5"
+            onClick={handleCheckout} 
+            disabled={totalQty === 0} 
+            className={`${
+              totalQty === 0 ? "bg-gray-400 cursor-not-allowed" : "bg-green-500"
+            } font-bold px-3 py-2 w-[90vw] lg:w-[28vw] rounded-md text-white mb-5`}
           >
-            Checkout
+             {totalQty === 0 ? "Add items to checkout" : "Checkout"}
           </button>
         </div>
       </div>
 
-      {showCartIcon && ( // Render the cart icon only if showCartIcon is true
+      {showCartIcon && (
         <FaShoppingCart
           onClick={() => setActiveCart(!activeCart)}
           className={`rounded-full shadow-md bg-white text-5xl p-3 fixed bottom-10 right-4 cursor-pointer ${
