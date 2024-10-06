@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Home from "./components/Home"; 
-// import Cart from './components/Cart';
+import Success from './components/Success';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from "./redux/Store"
@@ -26,8 +25,8 @@ const appRouter = createBrowserRouter([
         element: <About />
       },
       {
-        path: "contact",  
-        element: <Contact />
+        path: "success",
+        element:<Success/>
       },
       
     ]

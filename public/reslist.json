@@ -224,7 +224,8 @@
     "name": "Veg-Burger with cheese",
     "place": "Shastri Nagar",
     "desc": "Enjoy a variety of artisan cheeses, paired with an assortment of crispy crackers and complemented by fresh fruits and nuts. A delightful snack option for sharing or indulging in on your own.",
-    "price": "₹120"
+    "price": "₹120",
+    "category": "Snacks"
   },
   {
     "id": 17,
@@ -234,7 +235,7 @@
     "rating": 4.5,
     "minTime": 25,
     "maxTime": 30,
-    "name": "Snacks",
+    "category": "Snacks",
     "place": "Chopsani Housing Board",
     "price": "₹220",
     "desc": "Savor the satisfying crunch of crispy chicken wings seasoned to perfection. Choose your favorite sauce, from tangy BBQ to spicy buffalo, for a flavorful snacking experience."
@@ -248,6 +249,7 @@
     "minTime": 35,
     "maxTime": 40,
     "name": "vegPizza",
+    "category": "Snacks",
     "place": "Sardarpura",
     "desc": "Enjoy succulent pieces of marinated paneer (Indian cottage cheese) skewered and grilled to perfection. Served with mint chutney, these paneer tikka skewers offer a flavorful and aromatic Indian snack experience.",
     "price": "₹180"
@@ -263,6 +265,7 @@
     "name": "veg-Hakka Noodles,",
     "place": "Shastri Nagar",
     "price": "₹90",
+    "category": "Snacks",
     "desc": "Relish the smooth and flavorful hummus accompanied by a variety of fresh vegetable sticks and pita bread. A nutritious and satisfying option for a light and refreshing snack."
   },
   {
@@ -276,6 +279,7 @@
     "name": "Veg-Momos",
     "place": "New Jodhpur",
     "desc": "Indulge in a colorful assortment of fruit skewers featuring juicy chunks of melon, berries, pineapple, and more. A sweet and refreshing snack that's both delicious and visually appealing.",
-    "price": "₹70"
+    "price": "₹70",
+    "category": "Snacks"
   }
 ]
